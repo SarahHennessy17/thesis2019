@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'ITC Avant Garde Gothic Std', helvetica;
+	color: white;
+	background-color: black;
+/*	overflow: hidden;*/
+}
+
+.data {
+	position: relative;
+	float: left;
+	margin-top: -50vh;
+	z-index: 10;
+	text-transform: uppercase;
+}
+
+#year {
+	position: relative;
+	text-align: center;
+	z-index: 100;
+	margin-top: 5vh;
+	cursor: n-resize;
+}
+
+.hide {
+	display: none;
+}
+
+/*SLIDER*/
+
+.slidecontainer {
+	position: relative;
+	float: right;
+	z-index: 100;
+    width: 100vw;
+}
+
+.slider {
+    position: relative;
+	margin-top: -3vh;
+	margin-left: 32vw;
+
+	z-index: 100;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 35vw;
+    height: .5vh;
+    border-radius: 5px;   
+    background: white;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%; 
+    background: white;
+    cursor: pointer;
+}
+
+/*The DEMOGRAPHICS*/
+
+	.white {
+		position: fixed;
+		bottom: -30vw;
+		color: #232F64;
+		transition: ease 1s;
+		opacity: 1;
+	}
+
+	.white:hover {
+		z-index: 200;
+		opacity: 1;
+	}
+
+	.black {
+		position: fixed;
+		bottom: 0;
+		color: #D2232A;		
+		transition: ease 1s;
+		opacity: 1;
+	}
+
+	.black:hover {
+		z-index: 200;
+		opacity: 1;
+	}
+
+	.latino {
+		position: fixed;
+		bottom: -10vw;
+		color: #3D3D3D;		
+		transition: ease 1s;
+		opacity: 1;
+	}
+
+	.latino:hover {
+		z-index: 200;
+		opacity: 1;
+	}
+
+	.asian {
+		position: fixed;
+		bottom: 0;
+		color: white;		
+		transition: ease 1s;
+		opacity: 1;
+	}
+
+	.asian:hover {
+		z-index: 200;
+		opacity: 1;
+	}
+
+	.other {
+		position: fixed;
+		bottom: 0;
+		color: grey;		
+		transition: ease 1s;
+		opacity: 1;
+	}
+
+	.other:hover {
+		z-index: 200;
+		opacity: 1;
+	}
+
+
+
+
+
