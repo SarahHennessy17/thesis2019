@@ -37,26 +37,27 @@ slider.oninput = function() {
 
 }
 
-// $('#year').mousedown(function() {
-//         year += 1;
-//         counter += 1;
-//         var newData = demoData[counter];
+//COMPARE ADD TEAM NAMES ON CHOICE
+function pickTeam(){
 
-// 		// console.log(newData);
+  var newTeam = teamData[0];
 
-//         $('#year').text((year));
+$('#team1').text(newTeam["teamName"]);
 
-//         $(".white").css('height', newData["white"] + "vh");
-//         $(".black").css('height', newData["black"] + "vh");
-//         $(".latino").css('height', newData["latino"] + "vh");
-//         $(".asian").css('height', newData["asian"] + "vh");
-//         $(".other").css('height', newData["other"] + "vh");
+console.log(newTeam["teamName"])
 
-// 		if (year >= 2017) {
-// 			year = 1991;
-// 			counter = 0;
-// 		}
-//     })
+}
+
+for(var i=0; i< teamData.length;i++)
+{
+//creates option tag
+  jQuery('<option/>', {
+        value: teamData[i]["teamName"],
+        html: teamData[i]["teamName"],
+        }).appendTo('.dropdown select'); 
+        //appends to select if parent div has id dropdown
+}
+
 
 
 
