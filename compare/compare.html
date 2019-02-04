@@ -7,7 +7,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="compare.js"></script>
 	<script type="text/javascript" src="../data.js"></script>
-	<script type="text/javascript" src="teams.js"></script>
+	<script type="text/javascript" src="teamcolors.js"></script>
 	<script type="text/javascript" src="teamDemo.js"></script>
 </head>
 <body>
@@ -24,19 +24,6 @@
   		<div id="demo" class="hide"></div>
 	</div>
 
-<!-- Team One -->
-<div class='dropdown teamName1'>
-  <select>
-  <option value="none"> SELECT TEAM ONE</option>
-  </select>
-</div>
-
-<!-- Team Two -->
-<div class='dropdown teamName2'>
-  <select>
-  <option value="none"> SELECT TEAM TWO</option>
-  </select>
-</div>
 
 <!-- Team One -->
 <div class="data1 team1">
@@ -45,15 +32,32 @@
 	<div class="latino1"><p id="latino1percent">Latino</p></div>
 	<div class="asian1"><p id="asian1percent">Asian</p></div>
 	<div class="other1"><p id="other1percent">Other</p></div>
+
+		<!-- Team One DROPDOWN -->
+	<div class='dropdown teamName1'>
+	  	<select>
+		  <option value="none"> SELECT TEAM ONE</option>
+  		</select>
+	</div>
+
 </div>
 
 <!-- Team Two -->
 <div class="data2 team2">
+
 	<div class="white2"><p id="white2percent">White</p></div>	
 	<div class="black2"><p id="black2percent">Black</p></div>	
 	<div class="latino2"><p id="latino2percent">Latino</p></div>
 	<div class="asian2"><p id="asian2percent">Asian</p></div>
 	<div class="other2"><p id="other2percent">Other</p></div>
+
+
+	<!-- Team Two DROPDOWN -->
+	<div class='dropdown teamName2'>
+  		<select>
+  			<option value="none"> SELECT TEAM TWO</option>
+  		</select>
+	</div>
 </div>
 
 </body>

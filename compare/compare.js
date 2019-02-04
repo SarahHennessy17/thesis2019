@@ -34,6 +34,12 @@ $(".teamName1").change(function () {
     $(".asian1").css('height', newData["asian"] + "vh");
     $(".other1").css('height', newData["other"] + "vh");
 
+    $('#white1percent').text("White "+ newData["white"] + "%");
+    $('#black1percent').html("Black "+ newData["black"] + "%");
+    $('#latino1percent').text("Latino "+ newData["latino"] + "%");
+    $('#asian1percent').html("Asian "+ newData["asian"] + "%");
+    $('#other1percent').html("Other "+ newData["other"] + "%");
+
     if (newData["asian"] <= 3) {
       $("#asian1percent").addClass("hide");
     }
@@ -66,6 +72,12 @@ $(".teamName2").change(function () {
     $(".latino2").css('height', newData["latino"] + "vh");
     $(".asian2").css('height', newData["asian"] + "vh");
     $(".other2").css('height', newData["other"] + "vh");
+
+    $('#white2percent').text("White "+ newData["white"] + "%");
+    $('#black2percent').html("Black "+ newData["black"] + "%");
+    $('#latino2percent').text("Latino "+ newData["latino"] + "%");
+    $('#asian2percent').html("Asian "+ newData["asian"] + "%");
+    $('#other2percent').html("Other "+ newData["other"] + "%");
 
     if (newData["asian"] <= 3) {
       $("#asian2percent").addClass("hide");

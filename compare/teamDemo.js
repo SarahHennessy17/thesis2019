@@ -86,7 +86,7 @@ var teamDemo = [
 	// "label":"MLB Players EXAMPLE",
 	"white": 63,
 	"black": 20,
-	"latino": 20,
+	"latino": 10,
 	"asian": 7,
 	"other": 0,
 	},

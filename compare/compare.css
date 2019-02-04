@@ -1,5 +1,5 @@
 body {
-	/*overflow: auto;*/
+/*	overflow: auto;*/
 	background-color: gray;
 }
 
@@ -7,7 +7,7 @@ body {
 
 .menu {
 	position: fixed;
-	z-index: 10000;
+	z-index: 100;
 	top: 0vh;
 	height: 5vh;
 	width: 100vw;
@@ -36,22 +36,25 @@ body {
 
 select {
 	background-color: transparent;
-	border: transparent;
+	border: white solid .75px;
 	color: white;
+	font-size: 2.5vh;
+	margin-right: 0;
+	padding-right: 0;
 }
 
 .teamName1 {
-	position: fixed;
+	position: relative;
 	z-index: 10001;
-	top: 1vh;
-	left: 15vw;
+	top: -100vh;
+	text-align: center;
 }
 
 .teamName2 {
-	position: fixed;
+	position: relative;
 	z-index: 10001;
-	top: 1vh;
-	left: 65vw;
+	top: -100vh;
+	text-align: center;
 }
 
 /*Colors*/
@@ -60,8 +63,8 @@ select {
 	position: absolute;
 	float: right;
 	top: 0vh;
-	z-index: 10;
-	height: 95vh;
+	/*z-index: 10;*/
+	height: 100vh;
 	max-width: 50vw;
 	transition: ease 1s;
 }
@@ -83,12 +86,18 @@ select {
 	position: absolute;
 	margin-bottom: 0;
 	bottom: 0;
-	left: 45%;
+	left: 40%;
 	/*mix-blend-mode: difference;*/
 	-webkit-text-stroke: .5px black;
-	font-weight:bold;
+	font-weight: bold;
+	font-size: 3vh;
+	text-shadow: 2px 2px 8px black;
 }
 
+
+#white1percent:hover, #black1percent:hover, #latino1percent:hover, #asian1percent:hover, #other1percent:hover, #white2percent:hover, #black2percent:hover, #latino2percent:hover, #asian2percent:hover, #other2percent:hover {
+	text-shadow: 2px 2px 8px gray;
+}
 
 
 
